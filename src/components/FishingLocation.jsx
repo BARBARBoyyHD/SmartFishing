@@ -4,8 +4,8 @@ import React from 'react';
 const FishingLocation = () => {
   return (
     <div>
-      <h2>Fishing Locations</h2>
-      {/* Add fishing locations content here */}
+      <h2>Fishing Location </h2>
+      <h1>qweasdwqdsadaeqw</h1>
     </div>
   );
 };

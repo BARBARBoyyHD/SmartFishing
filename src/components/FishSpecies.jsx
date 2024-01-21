@@ -5,7 +5,7 @@ const FishSpecies = () => {
   return (
     <div>
       <h2>Fish Species</h2>
-      {/* Add fish species content here */}
+     <h1>asdasdas</h1>
     </div>
   );
 };
