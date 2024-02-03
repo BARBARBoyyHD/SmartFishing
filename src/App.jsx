@@ -1,6 +1,5 @@
 // src/App.jsx
 import React from 'react';
-import FishingLocation from './components/FishingLocation.jsx';
 import WeatherInfo from './components/WeatherInfo.jsx';
 import FishSpecies from './components/FishSpecies.jsx';
 import Recommendation from './components/Recommendation.jsx';
@@ -21,12 +20,6 @@ function App() {
       <div className="section">
         <WeatherInfo />
       </div>
-
-      <div className="section">
-        <FishingLocation />
-      </div>
-
-      
 
       <div className="section">
         <FishSpecies />
