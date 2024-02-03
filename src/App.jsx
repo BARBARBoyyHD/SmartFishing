@@ -22,9 +22,14 @@ function App() {
         
       </nav>
 
-      <div className="section">
-        <FishSpecies />
-      </div>
+
+        <div className="section">
+          <WeatherInfo />
+        </div>
+
+        <div className="section">
+          <FishSpecies />
+        </div>
 
         <div className="section">
           <Recommendation />

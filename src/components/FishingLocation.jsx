@@ -10,4 +10,4 @@ const FishSpecies = () => {
   );
 };
 
-export default FishSpecies;
+export default FishingLocation;
