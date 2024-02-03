@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import './Weather.css'
 
 const FishingLocation = ({ locationName, shouldFlyTo }) => {
   const [marker1Position, setMarker1Position] = useState([-6.903380560456988, 107.62039460301402]);
@@ -143,9 +142,15 @@ const WeatherInfo = () => {
         <FishingLocation locationName={search} shouldFlyTo={shouldFlyTo} />
        
       </div>
+      <p>{weather.name}</p>
+      <p>{weather.main?.temp}C</p>
+      <p>{weather.weather?.[0]?.main}</p>
+      <p>({weather.weather?.[0]?.description})</p>
+      <FishingLocation locationName={search} shouldFlyTo={shouldFlyTo} />
     </div>
   );
 };
+
 
 
 export default WeatherInfo;
