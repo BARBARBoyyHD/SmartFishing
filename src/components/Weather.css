@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  height: 400px; /* Adjust as needed */
+}
+
+.map-container {
+  width: 40%; /* Adjust as needed */
+  height: 100%;
+  float: left;
+}
+
+
+.Moredetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
