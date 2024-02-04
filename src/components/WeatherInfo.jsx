@@ -3,10 +3,15 @@ import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './Weather.css'
+import Marker1Icon from './monkey-day-heres-when-it-is-celebrated.jpg';
+import Marker2Icon from './kali.jpg';
+import Marker3Icon from './usaha-kolam-pancing.jpg';
+
 
 const FishingLocation = ({ locationName, shouldFlyTo }) => {
   const [marker1Position, setMarker1Position] = useState([-6.903380560456988, 107.62039460301402]);
-  const [marker2Position, setMarker2Position] = useState([-6.905547860750985, 107.61565213414252]);
+  const [marker2Position, setMarker2Position] = useState([-6.896779887187106, 107.62714662471949]);
+  const [marker3Position, setMarker3Position] = useState([-6.8997622147002176, 107.62128868040594]);
 
   const SearchMap = () => {
     const map = useMap();
@@ -42,18 +47,34 @@ const FishingLocation = ({ locationName, shouldFlyTo }) => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
-          {/* Marker 1 */}
-          <Marker position={marker1Position}>
-            <Popup>
-              tempat pancing 2
-            </Popup>
-          </Marker>
-          {/* Marker 2 */}
-          <Marker position={marker2Position}>
-            <Popup>
-              tempat pancing sijalik
-            </Popup>
-          </Marker>
+{/* Marker 1 */}
+<Marker position={marker1Position}>
+  <Popup>
+    <div>
+      <h3>tempat pancing 2</h3>
+      <img src={Marker1Icon} alt="Marker 1" style={{ width: '100%', height: 'auto' }} />
+      <h4>Rp.115.000</h4>
+    </div>
+  </Popup>
+</Marker>
+{/* Marker 2 */}
+<Marker position={marker2Position}>
+  <Popup>
+    <div>
+      <h3>tempat pancing sijalik</h3>
+      <img src={Marker2Icon} alt="Marker 2" style={{ width: '100%', height: 'auto' }} />
+    </div>
+  </Popup>
+</Marker>
+{/* Marker 3 */}
+<Marker position={marker3Position}>
+  <Popup>
+    <div>
+      <h3>tempat pancing simamat</h3>
+      <img src={Marker3Icon} alt="Marker 3" style={{ width: '100%', height: 'auto' }} />
+    </div>
+  </Popup>
+</Marker>
         </MapContainer>
       </div>
     </div>

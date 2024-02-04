@@ -9,5 +9,4 @@ Currently, two official plugins are available:
 
 - NPM that need to be install is
 - npm install react-leaflet leaflet
-- npm install express mongoose cors nodemon
-- npm install react-router-dom
+- npm install @react-google-maps/api
