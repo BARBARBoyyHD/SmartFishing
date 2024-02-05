@@ -1,9 +1,11 @@
-// src/App.jsx
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import WeatherInfo from './components/WeatherInfo.jsx';
 import FishSpecies from './components/FishSpecies.jsx';
 import Recommendation from './components/Recommendation.jsx';
 import Login from './components/Login.jsx';
+import AboutUs from './components/AboutUs.jsx'; 
+import BeginnersGuide from './components/BeginnersGuide.jsx'
 import './App.css';
 
 const api ={
@@ -15,46 +17,43 @@ function App() {
   const [user, setUser] = useState(null);
 
   const handleLogin = (username) => {
-    // Simulate successful login by setting the user
     setUser(username);
   };
 
   const handleLogout = () => {
-    // Simulate logout by resetting the user
     setUser(null);
   };
 
   return (
-    <div>
-      <nav className="navbar">
-        <h1 className="logo">Smart Fishing</h1>
-        <h1>About us </h1>
-        <h1>Beginners guide </h1>
-        {user ? (
-          <div className="user-block">
-            <span className="user-info">Logged in as {user}</span>
-            <button onClick={handleLogout}>Logout</button>
-          </div>
-        ) : (
-          <Login onLogin={handleLogin} />
-        )}
-      </nav>
-
+    <Router>
+      <div>
+        <nav className="navbar">
+          <Link to="/"><h1 className="logo">Smart Fishing</h1></Link>
+          <Link to="/about"><h1>About us</h1></Link>
+          <Link to="/Beginners"><h1>BeginnersGuide</h1></Link>
+          {user ? (
+            <div className="user-block">
+              <span className="user-info">Logged in as {user}</span>
+              <button onClick={handleLogout}>Logout</button>
+            </div>
+          ) : (
+            <Login onLogin={handleLogin} />
+          )}
+        </nav>
 
         <div>
           <div className="section">
-            <WeatherInfo />
-          </div>
-
-          <div className="section">
-            <FishSpecies />
-          </div>
-
-          <div className="section">
-            <Recommendation />
+            <Routes>
+              <Route path="/" element={<WeatherInfo />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/Beginners" element={<BeginnersGuide />} />
+              <Route path="/fish" element={<FishSpecies />} />
+              <Route path="/recommendation" element={<Recommendation />} />
+            </Routes>
           </div>
         </div>
-    </div>
+      </div>
+    </Router>
   );
 }
 
