@@ -101,39 +101,15 @@ const WeatherInfo = () => {
       setWeather(result);
       setShouldFlyTo(true);
 
-      // Fetch fishing places if the city name is "Bandung"
-      if (search === "Bandung") {
-        const fishingPlacesData = [
-          {
-            id: 1,
-            name: 'Pemancingan Saung Kemangi',
-            rating: 4.5,
-            address: 'Jl. Cipaku Indah X No.2, RW.4',
-            facilities: ['Pancingan', 'Umpan'],
-          },
-          {
-            id: 2,
-            name: 'Pemancingan Balong Seng',
-            rating: 4.2,
-            address: 'EJL Islamic Centre No.1, RT.02/RW.01',
-            facilities: ['Umpan', 'Jaring ikan'],
-          },
-          {
-            id: 3,
-            name: 'Pemancingan Dozzer pa RT',
-            rating: 4.8,
-            address: 'Jl. Rancabentang I No.27D, Ciumbuleuit',
-            facilities: ['Enak untuk healing'],
-          },
-        ];
-        setFishingPlaces(fishingPlacesData);
-      } else {
-        setFishingPlaces([]);
-      }
+     
     } catch (error) {
       console.error('Error fetching data:', error);
     }
-  };
+    let weatherImage = null;
+
+  // Check weather conditions and set image accordingly
+  
+}
 
   return (
     <div className='Weather'>
@@ -154,10 +130,10 @@ const WeatherInfo = () => {
         </div>
 
         <div>
-          <p>{weather.name}</p>
-          <p>{weather.main?.temp}C</p>
-          <p>{weather.weather?.[0]?.main}</p>
-          <p>({weather.weather?.[0]?.description})</p>
+          <p className='name'>{weather.name}</p>
+          <p className='temp'>{weather.main?.temp}C</p>
+          <p className='weather'>{weather.weather?.[0]?.main}</p>
+          <p className='desc'>({weather.weather?.[0]?.description})</p>
         </div>
       </div>
       <div>

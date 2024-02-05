@@ -44,13 +44,14 @@ function App() {
         <div>
           <div className="section">
             <Routes>
-              <Route path="/" element={<WeatherInfo />} />
+              <Route path="/" element={<WeatherInfo/>} />
               <Route path="/about" element={<AboutUs />} />
               <Route path="/Beginners" element={<BeginnersGuide />} />
               <Route path="/fish" element={<FishSpecies />} />
               <Route path="/recommendation" element={<Recommendation />} />
             </Routes>
           </div>
+          
         </div>
       </div>
     </Router>

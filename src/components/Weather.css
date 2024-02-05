@@ -16,3 +16,33 @@
   align-items: center;
  
 }
+
+.name{
+  color: #555;
+  margin: 5px 0;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.temp{
+  color: #555;
+  margin: 5px 0;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.weather{
+  color: #555;
+  margin: 5px 0;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.desc{
+  color: #555;
+  margin: 5px 0;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
