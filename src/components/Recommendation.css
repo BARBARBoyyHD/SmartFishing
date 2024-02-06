@@ -1,0 +1,18 @@
+/* Recommendation.css */
+
+.recommendation-container {
+                              overflow: hidden;
+                            }
+                            
+                            .recommendation-list {
+                              display: flex;
+                              list-style: none;
+                              padding: 0;
+                              margin: 0;
+                              scroll-behavior: smooth; /* Optional: Add smooth scrolling */
+                            }
+                            
+                            .recommendation-item {
+                              margin-right: 20px;
+                            }
+                            

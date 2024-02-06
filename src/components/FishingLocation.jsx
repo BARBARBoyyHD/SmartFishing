@@ -1,11 +1,11 @@
-// src/components/FishingLocation.js
+// src/components/FishSpecies.js
 import React from 'react';
 
-const FishingLocation = () => {
+const FishSpecies = () => {
   return (
     <div>
-      <h2>Fishing Locations</h2>
-      {/* Add fishing locations content here */}
+      <h2>Fish Species</h2>
+    <h1>asdasdas</h1>
     </div>
   );
 };

@@ -1,0 +1,88 @@
+.container {
+  position: relative;
+  height: 400px; /* Adjust as needed */
+}
+
+.map-container {
+  width: 40%; /* Adjust as needed */
+  height: 100%;
+  float: left;
+}
+
+
+.Moredetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.Weather {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.weather-heading {
+  color: #007bff;
+}
+
+.weather-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  margin-right: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.weather-details {
+  text-align: center;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.temp {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.weather {
+  font-size: 24px;
+}
+
+.desc {
+  font-size: 18px;
+  color: #666;
+}
+
+.fishing-location {
+  text-align: center;
+}
+
