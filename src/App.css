@@ -1,38 +1,23 @@
-/* src/app.css */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.header {
-  background-color: #3498db;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
-.section {
-  margin-top: 20px;
-}
-
-.card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
+.LeafletMap {
+  order: 1;
+  height: 300px;
+  width: 100%;
   margin-bottom: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-  color: #3498db;
+.SearchBar {
+  order: 3;
+  flex-basis: 100%;
+  margin-bottom: 20px;
 }
 
-/* Add more styles as needed */
+.Recommendation {
+  order: 4;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+
+.WeatherInfo {
+  order: 5;
+  flex-basis: 100%;
+}
