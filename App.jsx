@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate, useNavigate } from 'react-router-dom';
 
-import WeatherInfo from './components/WeatherInfo.jsx';
-import FishSpecies from './components/FishSpecies.jsx';
-import Recommendation from './components/Recommendation.jsx';
-import AboutUs from './components/AboutUs.jsx'; 
-import BeginnersGuide from './components/BeginnersGuide.jsx';
-import Login from './components/Login.jsx';
+import WeatherInfo from './WeatherInfo.jsx';
+import FishSpecies from './FishSpecies.jsx';
+import Recommendation from './Recommendation.jsx';
+import AboutUs from './AboutUs.jsx'; 
+import BeginnersGuide from './BeginnersGuide.jsx';
+import Login from './Login.jsx';
 import './app.css';
 
 function App() {
@@ -38,9 +38,9 @@ function App() {
         {isAuthenticated && (
           <nav className="navbar">
             <Link to="/"><h1 className="logo">Smart Fishing</h1></Link>
-            <Link to="/about"><h1>About us</h1></Link>
+            <Link to="/about"><h1>About Us</h1></Link>
             <Link to="/beginners"><h1>BeginnersGuide</h1></Link>
-            <p className='welcome'>Welcome, {user}!</p> {/* Display welcome message */}
+            <p className='welcome'><h3>Welcome, {user}!</h3></p> {/* Display welcome message */}
             <button onClick={handleLogout}>Logout</button> {/* Logout button */}
           </nav>
         )}

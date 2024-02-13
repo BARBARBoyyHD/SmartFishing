@@ -49,7 +49,9 @@ return (
       <div className="login-sidebar">
         <h3>Welcome To Smart Fishing!</h3>
         <p>
+          <center>
           To keep connected with us please login with your personal info.
+          </center>
         </p>
       </div>
     </div>

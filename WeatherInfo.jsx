@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -54,16 +53,15 @@ const FishingLocation = ({ locationName, shouldFlyTo }) => {
           <SearchMap />
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
 {/* Marker 1 */}
 <Marker position={marker1Position}>
   <Popup>
     <div>
-      <h3>Pemancingan cinong</h3>
+      <h3 style={{ color: 'black' }}>Pemancingan cinong</h3>
       <img src={Marker1Icon} alt="Marker 1" style={{ width: '70%', height: 'auto' }} />
       <h4>Jl. Cikutra No.201, Neglasari, Kec. Cibeunying Kaler, Kota Bandung, Jawa Barat 40124</h4>
-      <h4>081380803123</h4>
+      <h4>+6281380803123</h4>
       <h4>Jenis ikan yang tersedia : Lele, Bawal, Gurami, Mujair</h4>
     </div>
   </Popup>
@@ -72,7 +70,7 @@ const FishingLocation = ({ locationName, shouldFlyTo }) => {
 <Marker position={marker2Position}>
   <Popup>
     <div>
-      <h3>tempat pancing sijalik</h3>
+      <h3 style={{ color: 'black' }}>tempat pancing sijalik</h3>
       <img src={Marker2Icon} alt="Marker 2" style={{ width: '70%', height: 'auto' }} />
       <h4>Jalan Muararajeun Kulon, Cihaurgeulis, Cibeunying Kaler,Bandung,40122</h4>
       <h4>+628126898852</h4>
@@ -84,7 +82,7 @@ const FishingLocation = ({ locationName, shouldFlyTo }) => {
 <Marker position={marker3Position}>
   <Popup>
     <div>
-      <h3>tempat pancing simamat</h3>
+      <h3 style={{ color: 'black' }}>tempat pancing simamat</h3>
       <img src={Marker3Icon} alt="Marker 3" style={{ width: '100%', height: 'auto' }} />
       <h4>Jalan Lombok, Merdeka, Sumur Bandung, Bandung, 40113</h4>
       <h4>+6281267877752</h4>
@@ -96,9 +94,10 @@ const FishingLocation = ({ locationName, shouldFlyTo }) => {
 <Marker position={marker4Position}>
   <Popup>
     <div>
-      <h3>Pemancingan Pa Cucu</h3>
+      <h3 style={{ color: 'black' }}>Pemancingan Pa Cucu</h3>
       <img src={Marker4Icon} alt="Marker 4" style={{ width: '70%', height: 'auto' }} />
       <h4>Jl. Linggawastu No.291, Tamansari, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40116</h4>
+      <h4>+6281267875752</h4>
       <h4>Jenis ikan yang tersedia : Lele, Patin, Mujair</h4>
     </div>
   </Popup>
@@ -107,10 +106,10 @@ const FishingLocation = ({ locationName, shouldFlyTo }) => {
 <Marker position={marker5Position}>
   <Popup>
     <div>
-      <h3>Kolam Pemancingan Al-Ashr</h3>
+      <h3 style={{ color: 'black' }}>Kolam Pemancingan Al-Ashr</h3>
       <img src={Marker5Icon} alt="Marker 5" style={{ width: '70%', height: 'auto' }} />
       <h4>Jl. Pesantren VI Gg. Mutisah No.55, Cibabat, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40513</h4>
-      <h4>085315320931</h4>
+      <h4>+6285315320931</h4>
       <h4>Jenis ikan yang tersedia : Gurami, Mujair, Ikan Mas, Nila</h4>
     </div>
   </Popup>
@@ -119,10 +118,10 @@ const FishingLocation = ({ locationName, shouldFlyTo }) => {
 <Marker position={marker6Position}>
   <Popup>
     <div>
-      <h3>Mr. H. Suhaya Fishing Pond</h3>
+      <h3 style={{ color: 'black' }}>Mr. H. Suhaya Fishing Pond</h3>
       <img src={Marker6Icon} alt="Marker 6" style={{ width: '70%', height: 'auto' }} />
       <h4>curug sigey, Jl. Geger Arum Baru No.5, Isola, Kec. Sukasari, Kota Bandung, Jawa Barat 40154</h4>
-      <h4>081224811149</h4>
+      <h4>+6281224811149</h4>
       <h4>Jenis ikan yang tersedia : Gabus, Lele, Patin</h4>
     </div>
   </Popup>
@@ -131,9 +130,10 @@ const FishingLocation = ({ locationName, shouldFlyTo }) => {
 <Marker position={marker7Position}>
   <Popup>
     <div>
-      <h3>Kolam Pemancingan BRIGIF 15</h3>
+      <h3 style={{ color: 'black' }}>Kolam Pemancingan BRIGIF 15</h3>
       <img src={Marker7Icon} alt="Marker 7" style={{ width: '70%', height: 'auto' }} />
       <h4>4G4J+R9F, Baros, Cimahi Tengah, Cimahi City, West Java 40521</h4>
+      <h4>+6281263877752</h4>
       <h4>Jenis ikan yang tersedia : Nila, Ikan Mas, Bawal, Gurami, Mujair</h4>
     </div>
   </Popup>
@@ -142,9 +142,10 @@ const FishingLocation = ({ locationName, shouldFlyTo }) => {
 <Marker position={marker8Position}>
   <Popup>
     <div>
-      <h3>Kolam Pemancingan Kijang Cakti</h3>
+      <h3 style={{ color: 'black' }}>Kolam Pemancingan Kijang Cakti</h3>
       <img src={Marker8Icon} alt="Marker 8" style={{ width: '70%', height: 'auto' }} />
       <h4>Jl. Turangga Barat Baru No.12, Lkr. Sel., Kec. Lengkong, Kota Bandung, Jawa Barat 40263</h4>
+      <h4>+6281262377752</h4>
       <h4>Jenis ikan yang tersedia : Ikan Mas, Gurami, Mujair</h4>
     </div>
   </Popup>
@@ -181,7 +182,6 @@ const WeatherInfo = () => {
     }
     let weatherImage = null;
 
-  // Check weather conditions and set image accordingly
   
 }
 

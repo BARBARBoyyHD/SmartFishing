@@ -5,10 +5,9 @@ function AboutUs() {
   const teamMembers = [
     { id: 1, name: 'M.Alfito Naufal',nim:'10121043' ,role: 'UI Designer' },
     { id: 2, name: 'Muhammad Hasan',nim:'10121047' ,role: 'Programmer' },
-    { id: 3, name: 'Ferdiansyah Sukarya', nim:'10121068',role: 'Programmer,Fron-End' },
+    { id: 3, name: 'Ferdiansyah Sukarya', nim:'10121068',role: 'Programmer' },
     { id: 4, name: 'M. Andre Aria Saputra',nim:'10121072' ,role: 'Programmer' },
-    { id: 5, name: 'M.Nahrul Hayat', nim:'10121074',role: 'Programmer,Front-End' }
-    // Add more team members as needed
+    { id: 5, name: 'M.Nahrul Hayat', nim:'10121074',role: 'Programmer' }
   ];
 
   return (
