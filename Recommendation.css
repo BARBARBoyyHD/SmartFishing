@@ -1,0 +1,105 @@
+/* Recommendation.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+.recommendation-container {
+                              overflow: hidden;
+                            }
+                            .recommendationTitle{
+                              color :white;
+                            }
+                            
+                            .recommendation-list {
+                              display: flex;
+                              list-style: none;
+                              padding: 0;
+                              margin: 0;
+                              scroll-behavior: smooth; /* Optional: Add smooth scrolling */
+                            }
+                            
+                            .recommendation-item {
+                              margin-right: 20px;
+                            }
+                            
+                           
+                               body {
+                                  background: linear-gradient(to bottom, #ecf0f1, #bdc3c7); /* Example gradient background */
+                                  margin: 0;
+                                  padding: 0;
+                                  font-family: 'Roboto', sans-serif; /* Example font family */
+                        }
+                              .alatPancingContainer {
+                                text-align: center;
+                                padding: 30px; 
+                                margin: 40px -150px 10px -150px; 
+                                position: relative;
+                                border: 2px solid;
+                                border-image: linear-gradient(to bottom, #fcfcfc, #f1f1f1); 
+                                border-image-slice: 1;
+                                border-radius: 10px; 
+                                transition: all 0.3s ease;
+                                opacity: 0.8;
+                                background: #061e49;
+                              }
+                              
+                              .alatPancingContainer:hover {
+                                transform: scale(1.05);
+                                margin: 40px -100px 10px -100px; 
+                                box-shadow: 0 0 20px rgba(7, 234, 112, 0.908); 
+                                opacity: 0.9;
+                              }
+                    
+                              .alatPancingContainer img {
+                                width: 200px;
+                                height: 200px;
+                                margin-top: 50px;
+                                border-radius: 10px;
+                                
+                              }
+                    
+                              .labelPancing {
+                                position: absolute;
+                                top: 30px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                font-size: 18px;
+                                font-weight: bold;
+                                color: #fbfcfe;
+                              }
+                    
+                              .deskripsiPancing {
+                                margin-top: 10px;
+                                color: white;
+                              }
+                              .ceklistSymbol {
+                                margin-right: 5px;
+                                font-weight: bold;
+                                font-size: 18px;
+                                color: #27ae60;
+                              }
+                              .garisPemisah {
+                                width: 100%;
+                                height: 1px;
+                                background-color: #ccc;
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                              }
+                              .buyNowButton {
+                                background-color: #f9f9f9;
+                                color: #000000;
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 5px;
+                                cursor: pointer;
+                                transition: background-color 0.3s ease, color 0.3s ease;
+                              }
+                            
+                              .buyNowButton:hover {
+                                background-color: #bdc9ca;
+                                color: #f8f8f9;
+                              }
+                              .recommendationTitle {
+                                text-align: center;
+                                font-size: 26px;
+                                margin-top: 70px;
+                                color: #fefefe;
+                              }

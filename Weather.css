@@ -1,0 +1,132 @@
+.Weather {
+   /* Gradient background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color:white
+}
+
+
+.weather-heading-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.weather-details-container {
+  text-align: center;
+}
+
+.weather-details {
+  flex: 5;
+  color: #fff;
+  background: linear-gradient(to right,  #1409ae, #020b27);
+  border-radius: 8px; /* Rounded corners */
+  padding: 50px; /* Padding for content */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White box shadow */
+  margin: auto; /* Center horizontally */
+  margin-top: 20px; /* Adjust top margin as needed */
+  transition: transform 0.5s; /* Smooth transition for shaking effect */
+}
+
+.weather-details:hover {
+  animation: shake 0.5s infinite alternate; /* Apply shake animation on hover */
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.p{
+  color:#fff
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.temp {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.desc {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color:white
+}
+.cloud{
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.fishing-location {
+  margin-top: 20px;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Apply the shaking animation to the search button on hover */
+.search-button:hover {
+  animation: shake 0.5s ease-in-out; /* Apply the shake animation */
+}

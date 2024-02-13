@@ -1,0 +1,95 @@
+
+/* App.css */
+.navbar {
+  background: linear-gradient(to right,  #0e076e, #081a50); /* Gradient background */
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+.welcome{
+  color:white
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar a:hover {
+  color: #ffd166; /* Change color on hover */
+}
+
+.logo {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.Recommendation {
+  order: 4;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+
+.WeatherInfo {
+  order: 5;
+  flex-basis: 100%;
+}
+.MoreDetail {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
+.search-container {
+  position: absolute;
+  right: 2px;
+}
+.Search-Bar {
+  order: 3;
+  flex-basis: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #040220, #081a50); /* Gradient background */
+  color: #ffffff; /* White text color */
+}
+
+@media (max-width: 768px) {
+  main .box {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 500px) {
+  main .box {
+    flex-basis: 100%;
+  }
+  .logged-in {
+    transform: translateX(100%);
+    transition: transform 1000s ease-in-out; /* Add smooth transition for transform property */
+  }
+  
+
+}

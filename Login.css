@@ -1,0 +1,87 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the container full height of the viewport */
+    background: linear-gradient(to bottom right, #040220, #081a50); /* Gradient background */
+  }
+  
+  .login-form {
+    flex-basis: 50%;
+  }
+  
+  .login-form h2 {
+    margin-top: 0;
+    color: #f8f9fa; /* Light gray */
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ced4da; /* Lighter gray */
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ced4da; /* Lighter gray */
+    border-radius: 4px;
+    background-color: #fff; /* White */
+    color: #495057; /* Dark gray */
+  }
+  
+  .login-form button[type="button"] {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #20c997; /* Turquoise */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-sidebar {
+    flex-basis: 40%;
+    padding-left: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .login-sidebar h3 {
+    margin-top: 0;
+    color: #f8f9fa; /* Light gray */
+  }
+  
+  .login-sidebar p {
+    margin-bottom: 0;
+    color: #ced4da; /* Lighter gray */
+  }
+
+  .login-form button[type="button"] {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #20c997; /* Turquoise */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Add smooth transition for transform property */
+  }
+  
+  /* Add keyframes for shaking animation */
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Apply shaking animation on button hover */
+  .login-form button[type="button"]:hover {
+    animation: shake 0.5s ease infinite; /* Apply the shake animation infinitely on hover */
+  }
+  
